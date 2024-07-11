@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <script src="JavaScript.js"></script>
+    <link href="StyleSheet.css" rel="stylesheet" />
+    <title></title>
+</head>
+<body onload="buildGame()" onunload="saveGame()">
+    <div class="contain">
+        <table class="board"></table>
+        <div class="hint"></div>
+        <div class="map"></div>
+        <button class="end" onclick="checkTruth()"></button>
+        <div id="objectsContainer"></div>
+        <div id="openMenu" class="openMenu" onmouseover="openNav()"></div>
+        <nav id="Menu" class="Menu" onmouseleave="closeNav()">
+            <a onclick="options()">home page</a>
+            <a onclick="instructions()">instuctions</a>
+            <a onclick="selectL()">choose level</a>
+        </nav>
+    </div>
+    <audio id="succeed">
+        <source src="music/right_answer.mp3" type="audio/mpeg" />
+    </audio>
+    <audio id="fail">
+        <source src="music/wrong_answer.mp3" type="audio/mpeg" />
+    </audio>
+</body>
+</html>

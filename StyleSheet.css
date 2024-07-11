@@ -1,0 +1,408 @@
+﻿body {
+    margin: auto;
+    text-align: center;
+    direction: rtl;
+    font-family: 'Segoe UI';
+    overflow: hidden;
+}
+
+td {
+    border: 2px solid #505e8f;
+    width: 30%;
+    height: 30%;
+}
+
+
+img {
+    width: 18vh;
+    height: 12vh;
+}
+
+#ps {
+    width: auto;
+    height: auto;
+    border-radius: 3vh;
+    margin: auto;
+}
+
+.Menu > a:hover {
+    color: #9ff5ee;
+    cursor: pointer;
+}
+
+.board {
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 80%;
+    background-color: transparent;
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+
+
+
+.cardHint {
+    width: 70%;
+    height: 100%;
+}
+
+.cardEasyLevel {
+    width: 85%;
+    height: 80%
+}
+
+.sizeLarge {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+}
+
+.end {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    margin: auto;
+    text-align: center;
+    width: 40%;
+    height: 100%;
+    background-color: transparent;
+    color: cornflowerblue;
+    font-family: cursive;
+    border: none;
+    background-image: url('pictures/fin.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 15%;
+    margin-left: 20%;
+}
+
+.hint {
+    grid-row: 1/3;
+    grid-column: 1/2;
+    margin-left: 0%;
+    background-color: transparent;
+}
+
+.contain {
+    direction: rtl;
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+    grid-template-rows: 3fr 1fr;
+    background-repeat: no-repeat;
+    background-image: url('pictures/ב5.PNG');
+    background-position-y: center;
+    background-position-x: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+#objectsContainer {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+    #objectsContainer > img:hover {
+        opacity: 2;
+        cursor: pointer;
+    }
+
+    #objectsContainer > img {
+        opacity: 0.8;
+    }
+
+
+.map {
+    grid-column: 3/4;
+    grid-row: 1/3;
+    background-image: url('pictures/map.png');
+    background-size: 80%;
+    background-repeat: no-repeat;
+    margin-right: 0%;
+    grid-template-rows: 2fr;
+    margin-top: 70%;
+}
+
+
+h1 {
+    color: white;
+    text-shadow: 0 0 20px #00BCD4, 0 0 20px #4CAF50;
+    font-size: 12vh;
+    font-family: 'Lucida Handwriting';
+}
+
+button {
+    width: 30vh;
+    height: 12vh;
+    font-size: 4vh;
+    font-family: 'Segoe UI';
+}
+
+.openShow {
+    background-image: url('pictures/background.gif');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    background-position-x: center;
+    height: 100vh;
+    background-size: cover;
+}
+
+.start {
+    width: 30vh;
+    height: 12vh;
+    background-image: url(pictures/start.png);
+    background-size: 100%;
+    border-radius: 30%;
+    margin-bottom: 20vh;
+    bottom: 20vh;
+    background-color: transparent;
+    background-position: center;
+    border: transparent;
+    background-repeat: no-repeat;
+    margin: auto;
+    text-align: center;
+    margin-top: 85vh;
+}
+
+.optionsContainer {
+    display: flex;
+    flex-direction: column;
+    background-image: url('pictures/Menue.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 40vw;
+    height: 90vh;
+    margin: auto;
+    align-items: center;
+    margin: auto;
+}
+
+    .optionsContainer > button {
+        width: 30%;
+        height: 12%;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        position: relative;
+        margin-bottom: 5%;
+    }
+
+        .optionsContainer > button:first-child {
+            background-image: url('pictures/PLAY.png');
+            background-size: 100%;
+            margin-top: 40%;
+        }
+
+        .optionsContainer > button:nth-child(2) {
+            background-image: url('pictures/options.png');
+            background-size: 100%;
+        }
+
+        .optionsContainer > button:nth-child(3) {
+            background-image: url('pictures/exittttt.png');
+            background-size: 100%;
+        }
+
+.bodyOption {
+    background-image: url('pictures/ב5.PNG');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.cardMess {
+    width: 80vh;
+    height: 60vh;
+    background-image: url('pictures/message.png');
+    background-size: 100%;
+    margin: auto;
+    position: absolute;
+    margin-top: 8%;
+    font-size: 3.6vh;
+    font-weight: 500;
+    text-align: center;
+    margin-right: 33%;
+}
+
+.continueMess {
+    margin-right: 2%;
+}
+
+.finishLevel {
+    background-image: url('pictures/pic/win1.png');
+    position: absolute;
+    width: 60vh;
+    height: 60vh;
+}
+
+.cardMess > button {
+    width: 20vh;
+    height: 10vh;
+    position: relative;
+    background-image: url('pictures/pic/nextt.png');
+    background-size: cover;
+    background-color: transparent;
+    border: white;
+    border-collapse: collapse;
+}
+
+.cardMess > .finishGame {
+    background-image: url('pictures/pic/new_game.png');
+    width: 24vh;
+    height: 10vh;
+}
+
+.cardMess > .exitGame {
+    background-image: url('‏‏תיקיה חדשה/exit.png');
+    width: 21vh;
+    height: 11vh;
+}
+
+.cardMess > .yes {
+    background-image: url('pictures/pic/YES.png');
+}
+
+.cardMess > .no {
+    background-image: url('pictures/pic/NO.png');
+}
+
+.cardMess > p {
+    margin-top: 35%;
+}
+
+.exit {
+    background-image: url('pictures/exitDiv.png');
+    background-repeat: no-repeat;
+    margin-right: 0%;
+    width: 70vh;
+    position: absolute
+}
+
+    .exit > button {
+        margin-top: 54%;
+        width: 15vh;
+        height: 7vh;
+    }
+
+.cardMess > .try {
+    background-image: url('pictures/try again.png');
+    width: 25vh;
+    height: 10vh;
+}
+
+cardMess > .try > p {
+    color: aqua;
+}
+
+.levels {
+    background-image: url('‏‏תיקיה חדשה/רקעים/soft-background-with-cute-blue-watercolor-stain_1048-5169.jpg');
+    background-size: 100%;
+}
+
+.containLevels {
+    text-align: center;
+    display: inline-block;
+    direction: ltr;
+    margin-top: 0%;
+}
+
+    .containLevels > img {
+        height: 20vh;
+        width: 20vh;
+        border-radius: 0% 25% 0% 25%;
+    }
+
+.clevel {
+    background-image: url('pictures/levels.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 10vh;
+    width: 20vh;
+    margin: auto;
+    text-align: center;
+}
+
+
+
+.openMenu {
+    margin-top: 0%;
+    right: 10vh;
+    height: 10%;
+    width: 10%;
+    grid-row: 1/2;
+    grid-column: 2/3;
+    background-image: url('pictures/buttons/options1.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+}
+
+.Menu {
+    margin-top: -60%;
+    background-color: #7ecff7;
+    height: 20%;
+    border-radius: 12%;
+    width: 15%;
+    grid-row: 1/2;
+    grid-column: 2/3;
+}
+
+    .Menu a {
+        text-decoration: none;
+        padding: 5%;
+        font-size: 2vh;
+        font-family: cursive;
+        color: white;
+        display: grid;
+    }
+
+.levelsDedign {
+    background-image: url('pictures/ב5.PNG');
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+fieldset {
+    border-radius: 15%;
+    background-color: transparent;
+    border: 10px double cornflowerblue;
+    margin: auto;
+    text-align: center;
+    height: 70%;
+    width: 50%;
+}
+
+legend {
+    font-family: system-ui;
+    font-size: 300%;
+    color: azure;
+    text-shadow: -1px 2px 2px cornflowerblue,-1px 0 cornflowerblue,-1px 2px 2px cornflowerblue,-1px 0 cornflowerblue,-1px 2px cornflowerblue;
+}
+
+.con {
+    height: 100vh;
+    background-image: url('pictures/6143.jpg');
+    background-position-y: center;
+    background-position-x: center;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.instructions p {
+    margin-top: 4%;
+    display: grid;
+    font-family: system-ui;
+    font-size: 3vh;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+    text-shadow: 2px 0px cornflowerblue, 2px 0px #fbfbfb, 2px 0px cornflowerblue;
+}
+
+#start {
+    margin-top: 0%;
+}
